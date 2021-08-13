@@ -1,5 +1,6 @@
 #!/bin/bash
 
+$currentDir = "$HOME/dotfiles"
 # check to see is git command line installed in this machine
 IS_GIT_AVAILABLE="$(git --version)"
 if [[ $IS_GIT_AVAILABLE == *"version"* ]]; then
@@ -9,12 +10,25 @@ else
   exit 1
 fi
 
+files=("bashrc" "zshrc" "vimrc" "gitconfig" "p10k.zsh" "profile" "functions")
+
+for file in "${files[@]}"; 
+do
+  echo "Moving .$file from ~ to folder"
+  mv $HOME/.$file ./ubuntu/$file
+
+  echo "Creating Symlink to $file from ~"
+  ln -s $currentDir/ubuntu/$file $HOME/.$file
+
+  echo ""
+done
+
 # copy dot files
-cp  $HOME/{.bashrc,.zshrc,.vimrc,.gitconfig,.p10k.zsh,.profile,} .
+#cp  $HOME/{.bashrc,.zshrc,.vimrc,.gitconfig,.p10k.zsh,.profile,} .
 
 # Check git status
 gs="$(git status | grep -i "modified")"
-# echo "${gs}"
+echo "${gs}"
 
 # If there is a new change
 if [[ $gs == *"modified"* ]]; then

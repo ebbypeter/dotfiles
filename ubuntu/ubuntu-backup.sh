@@ -15,10 +15,10 @@ files=("bashrc" "zshrc" "vimrc" "gitconfig" "p10k.zsh" "profile" "functions")
 for file in "${files[@]}"; 
 do
   echo "Moving .$file from ~ to folder"
-  mv $HOME/.$file $currentDir/ubuntu/$file
+  mv $HOME/.$file $HOME/dotfiles/ubuntu/backup/$file
 
   echo "Creating Symlink to $file from ~"
-  ln -s $currentDir/ubuntu/$file $HOME/.$file
+  ln -s $HOME/dotfiles/ubuntu/$file $HOME/.$file
 
   echo ""
 done

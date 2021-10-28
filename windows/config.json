@@ -1,22 +1,26 @@
 [
   {
     "title": "GitConfig",
-    "sourceFile": "~/.gitconfig",
-    "targetRelativeFile": "./gitconfig"
+    "sourceFolder": "~",
+    "sourceFile": ".gitconfig",
+    "targetFile": "gitconfig"
   },
   {
     "title": "GitMessage Config",
-    "sourceFile": "~/.gitmessage.txt",
-    "targetRelativeFile": "./gitmessage.txt"
+    "sourceFolder": "~",
+    "sourceFile": ".gitmessage.txt",
+    "targetFile": "gitmessage.txt"
   },
   {
     "title": "PowerShell Core - Profile",
-    "sourceFile": "%Documents%/PowerShell/Microsoft.PowerShell_profile.ps1",
-    "targetRelativeFile": "./PowerShell/Microsoft.PowerShell_profile.ps1"
+    "sourceFolder": "%Documents%\\PowerShell",
+    "sourceFile": "Microsoft.PowerShell_profile.ps1",
+    "targetFile": "PowerShell_profile.ps1"
   },
   {
     "title": "Windows PowerShell - Profile",
-    "sourceFile": "%Documents%/WindowsPowerShell/Microsoft.PowerShell_profile.ps1",
-    "targetRelativeFile": "./WindowsPowerShell/Microsoft.PowerShell_profile.ps1"
+    "sourceFolder": "%Documents%\\WindowsPowerShell",
+    "sourceFile": "Microsoft.PowerShell_profile.ps1",
+    "targetFile": "WindowsPowerShell_profile.ps1"
   }
 ]

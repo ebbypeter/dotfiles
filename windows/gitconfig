@@ -1,0 +1,14 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Ebby Peter
+	email = ebby.peter@datacom.co.nz
+# Please adapt and uncomment the following lines:
+#	name = Ebby Peter
+#	email = ebby.peter@datacom.co.nz
+[commit]
+	template = ~/.gitmessage.txt
+[color]
+	ui = true
+	status = always
+[core]
+	editor = code --new-window --wait

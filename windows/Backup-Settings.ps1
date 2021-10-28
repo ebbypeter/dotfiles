@@ -28,9 +28,12 @@
 param ()
 
 #-------------------------------------------[Declarations]------------------------------------------
+$homeFolder = $HOME;
 $myDocumentsFolder = [Environment]::GetFolderPath("MyDocuments");
 $configFileName = "config.json"
 $currentLocation = $PSScriptRoot;
+$hostname = hostname;
+$backupFolder = ".\backup\$hostname"
 #--------------------------------------------[Functions]--------------------------------------------
 
 #--------------------------------------------[Execution]--------------------------------------------
@@ -39,8 +42,18 @@ Write-Host "Config File Path: $currentLocation\$configFileName";
 Write-Host "MyDocuments Folder Path: $myDocumentsFolder";
 
 # Load config file
+$configJson = Get-Content -Raw -Path "$currentLocation\$configFileName" | ConvertFrom-Json
 
 # Create a ./backup/<hostname> folder
+New-Item -Path . -Name $backupFolder -ItemType Directory -Force
 
 # Copy the files determined in config to backup folder
+Write-Host "";
+foreach ($configItem in $configJson)
+{
+  Write-Host "Copying $($configItem.title)";
+  $configItem.sourceFolder = $configItem.sourceFolder.replace("~", $homeFolder);
+  $configItem.sourceFolder = $configItem.sourceFolder.replace("%Documents%", $myDocumentsFolder);
 
+  Copy-Item -LiteralPath "$($configItem.sourceFolder)\$($configItem.sourceFile)" -Destination "$backupFolder\$($configItem.targetFile)" -Force;
+}

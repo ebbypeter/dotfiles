@@ -1,10 +1,8 @@
 # This is Git's per-user configuration file.
 [user]
 	name = Ebby Peter
-	email = ebby.peter@datacom.co.nz
+	email = ebby.peter@booster.co.nz
 # Please adapt and uncomment the following lines:
-#	name = Ebby Peter
-#	email = ebby.peter@datacom.co.nz
 [commit]
 	template = ~/.gitmessage.txt
 [color]

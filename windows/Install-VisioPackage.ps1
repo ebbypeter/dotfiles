@@ -81,7 +81,6 @@ function DownloadGitHubRepository {
   
   return $unzipFolder;
 }
-
 function Install-AzureStencils {
   [CmdletBinding()]
   param( 
@@ -127,8 +126,8 @@ function Install-AzureStencils {
     
   Remove-Item -Path $githubFolder -Recurse -Force -Confirm:$false;
 }
-#------------------------------------------------------[Execution]------------------------------------------------------
 
+#------------------------------------------------------[Execution]------------------------------------------------------
 Write-Host "Installing Azure-Design" -ForegroundColor White
 Install-AzureStencils -Name "Azure-Design" `
   -Author "David-Summers" `

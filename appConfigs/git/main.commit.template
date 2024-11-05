@@ -1,0 +1,13 @@
+﻿# Title No more than 50 chars. ##### stop here: #
+# Title Hint: Summary, imperative, start upper case, don't end with a period
+# Title Hint: If applied, this commit will <Title> 
+
+# Body: Explain *what* and *why* (not *how*). #########################
+# Wrap at 72 chars. ################################## which is here: #
+
+# Co-authored-by for all contributors.
+# Co-authored-by: name <user@users.noreply.com>
+
+# Also add the issue Tracker References/Work Items
+# Resolves: #123
+# See also: #456, #789

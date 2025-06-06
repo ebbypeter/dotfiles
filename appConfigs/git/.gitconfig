@@ -1,0 +1,6 @@
+[include]
+  path = "D:/personal/gh-ebbypeter/dotfiles/appConfigs/git/main.gitconfig"
+[includeIf "gitdir:D:/personal/**"]
+  path = "D:/personal/gh-ebbypeter/dotfiles/appConfigs/git/personal.gitconfig"
+[includeIf "gitdir:D:/work/**"]
+  path = "D:/personal/gh-ebbypeter/dotfiles/appConfigs/git/work.gitconfig"

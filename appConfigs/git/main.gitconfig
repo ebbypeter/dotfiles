@@ -1,0 +1,39 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Ebby Peter
+	email = ebbypeter@outlook.com
+# Please adapt and uncomment the following lines:
+[branch]
+  sort = -committerdate
+[color]
+	ui = true
+	status = always
+[column]
+	ui = auto
+[commit]
+	template = ~/.main.commit.template
+[core]
+	editor = code --new-window --wait
+	autocrlf = true
+[diff]
+  algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
+[fetch]
+  prune = true
+  pruneTags = true
+  all = true
+[init]
+  defaultBranch = main
+[push]
+  default = simple
+  autoSetupRemote = true
+  followTags = true
+[rebase]
+  autoSquash = true
+  autoStash = true
+  updateRefs = true
+[rerere]
+  enabled = true
+  autoupdate = true

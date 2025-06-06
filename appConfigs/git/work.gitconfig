@@ -2,3 +2,10 @@
 [user]
 	name = Ebby Peter
 	email = ebby.peter@ospri.co.nz
+	#signingkey = ~/.ssh/keys/compA
+
+# [commit]
+#   gpgsign = true
+
+# [gpg]
+#   format = ssh

@@ -1,13 +1,23 @@
-﻿# Title No more than 50 chars. ##### stop here: #
+﻿#Title No more than 50 chars. #### stop here: ###
+#################################################
 # Title Hint: Summary, imperative, start upper case, don't end with a period
 # Title Hint: If applied, this commit will <Title> 
 
-# Body: Explain *what* and *why* (not *how*). #########################
-# Wrap at 72 chars. ################################## which is here: #
+#Body: Explain *what* and *why* (not *how*). ##########################
+#######################################################################
+# Explain the reason for the change and any relevant context.
+# What problem does this commit solve?
+# Include any background or references to discussions, issues, or tasks.
+# Detail any dependencies or specific considerations if applicable.
 
-# Co-authored-by for all contributors.
-# Co-authored-by: name <user@users.noreply.com>
+## Example of possible body content:
+# - Motivation and context for the change
+# - How this change affects existing functionality
+# - Any technical considerations, performance implications, etc.
+# - Reference to Jira, or GitHub issue numbers, e.g., "Fixes #123".
 
+## Footer
+#################################################
 # Also add the issue Tracker References/Work Items
 # Resolves: #123
 # See also: #456, #789

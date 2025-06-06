@@ -3,9 +3,10 @@
 	name = Ebby Peter
 # Please adapt and uncomment the following lines:
 [commit]
-	template = ~/.gitmessage.txt
+	template = ~/.main.commit.template
 [color]
 	ui = true
 	status = always
 [core]
 	editor = code --new-window --wait
+	autocrlf = true

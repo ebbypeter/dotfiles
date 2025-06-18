@@ -15,6 +15,7 @@
 [core]
 	editor = code --new-window --wait
 	autocrlf = true
+  longpaths = true
 [diff]
   algorithm = histogram
   colorMoved = plain

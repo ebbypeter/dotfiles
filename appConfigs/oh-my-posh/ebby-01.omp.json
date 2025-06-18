@@ -11,7 +11,7 @@
             "cache_duration": "none",
             "source": "cli"
           },
-          "leading_diamond": "\u256d\u2500\ue0b2",
+          "leading_diamond": "╭─\ue0b2",
           "template": "  ",
           "foreground": "#000000",
           "background": "#d3d7cf",
@@ -54,7 +54,7 @@
             "cache_duration": "none"
           },
           "leading_diamond": "\ue0b2",
-          "trailing_diamond": "\ue0b0<#d3d7cf>\u2500\u256e</>",
+          "trailing_diamond": "\ue0b0<#d3d7cf>─\u256e</>",
           "template": " \ufd31 {{.Context}} ",
           "foreground": "#000000",
           "background": "#ebcc34",
@@ -72,7 +72,7 @@
           "properties": {
             "cache_duration": "none"
           },
-          "leading_diamond": "\u251c\u2500\ue0b2",
+          "leading_diamond": "\u251c─\ue0b2",
           "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
           "foreground": "#000000",
           "background": "#d3d7cf",
@@ -256,7 +256,7 @@
             "time_format": "Jan _2,03:04 PM"
           },
           "leading_diamond": "\ue0b2",
-          "trailing_diamond": "\ue0b0<#d3d7cf>\u2500\u2524</>",
+          "trailing_diamond": "\ue0b0<#d3d7cf>─\u2524</>",
           "template": " \uf5ef {{ .CurrentDate | date .Format }} ",
           "foreground": "#000000",
           "background": "#d3d7cf",
@@ -278,7 +278,7 @@
               "pwsh": "\uf489"
             }
           },
-          "leading_diamond": "\u2570\u2500\ue0b2",
+          "leading_diamond": "\u2570─\ue0b2",
           "foreground": "#000000",
           "background": "#d3d7cf",
           "type": "shell",
@@ -348,7 +348,7 @@
           "properties": {
             "cache_duration": "none"
           },
-          "template": "<#d3d7cf>\u2500\u256f</>",
+          "template": "<#d3d7cf>─\u256f</>",
           "foreground": "#d3d7cf",
           "type": "text",
           "style": "plain"

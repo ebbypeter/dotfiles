@@ -1,6 +1,6 @@
 [include]
-  path = "D:/05-Src/personal/gh-ebbypeter/dotfiles/appConfigs/git/main.gitconfig"
+  path = "~/git/main.gitconfig"
 [includeIf "gitdir:**/personal/**"]
-  path = "D:/05-Src/personal/gh-ebbypeter/dotfiles/appConfigs/git/personal.gitconfig"
-[includeIf "gitdir:**/work/**"]
-  path = "D:/05-Src/personal/gh-ebbypeter/dotfiles/appConfigs/git/work.gitconfig"
+  path = "~/git/personal.gitconfig"
+[includeIf "gitdir:**/orpsi/**"]
+  path = "~/git/work-ospri.gitconfig"

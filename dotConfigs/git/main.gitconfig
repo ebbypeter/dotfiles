@@ -11,7 +11,7 @@
 [column]
 	ui = auto
 [commit]
-	template = ./main.commit.template
+	template = ~/.config/git/main.commit.template
 [core]
 	editor = code --new-window --wait
 	autocrlf = true

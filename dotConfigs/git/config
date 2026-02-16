@@ -1,0 +1,6 @@
+[include]
+  path = "~/.config/git/main.gitconfig"
+[includeIf "gitdir:**/personal/**"]
+  path = "~/.config/git/personal.gitconfig"
+[includeIf "gitdir:**/orpsi/**"]
+  path = "~/.config/git/work-ospri.gitconfig"
